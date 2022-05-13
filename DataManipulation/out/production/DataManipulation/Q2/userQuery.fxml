@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<fx:root fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.0" prefWidth="600.0" spacing="20.0" style="-fx-background-color: #345;" type="VBox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Q2.UserQueryController">
+    <children>
+        <TableView fx:id="table" prefHeight="229.0" prefWidth="560.0">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="nameColumn" prefWidth="75.0" text="Name" />
+                <TableColumn fx:id="majorColumn" prefWidth="75.0" text="Major" />
+                <TableColumn fx:id="gradeColumn" prefWidth="75.0" text="Grade" />
+            </columns>
+        </TableView>
+        <TextArea fx:id="textArea" prefHeight="67.0" prefWidth="560.0" promptText="Write query here.." />
+        <HBox fx:id="buttonsBox" alignment="CENTER" prefHeight="36.0" prefWidth="560.0" spacing="15.0">
+            <children>
+                <Button fx:id="btnQ1" mnemonicParsing="false" onAction="#actionQ1" style="-fx-background-color: blue;" text="Query 1" textFill="WHITE" />
+                <Button fx:id="btnQ2" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#actionQ2" style="-fx-background-color: blue;" text="Query 2" textFill="WHITE" />
+                <Button fx:id="btnQ3" layoutX="75.0" layoutY="10.0" mnemonicParsing="false" onAction="#actionQ3" style="-fx-background-color: blue;" text="Query 3" textFill="WHITE" />
+                <Button fx:id="btnQ4" layoutX="140.0" layoutY="10.0" mnemonicParsing="false" onAction="#actionQ4" style="-fx-background-color: blue;" text="Query 4" textFill="WHITE" />
+                <Button fx:id="btnExecute" layoutX="386.0" layoutY="13.0" mnemonicParsing="false" onAction="#actionExecute" style="-fx-background-color: green;" text="execute" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+    </children>
+    <padding>
+        <Insets left="20.0" right="20.0" top="20.0" />
+    </padding>
+</fx:root>
